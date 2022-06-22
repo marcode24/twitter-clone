@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
 html {
   font-family: "Roboto", sans-serif;
 }
@@ -37,6 +41,7 @@ html {
   width: fit-content;
   font-weight: bold;
   height: 40px;
+  transition: 0.2s;
 }
 
 .btn fa-icon {
@@ -52,7 +57,96 @@ html {
   color: #000;
 }
 
+.btn-light:hover {
+  background-color: #d7dbdc;
+}
+
 .btn-primary-outline {
   background: transparent;
   border: 1px solid #536471;
+}
+
+.btn-light-outline {
+  background: transparent;
+  border: 1px solid #333639;
+  color: #eff3f4;
+}
+
+.btn-light-outline:hover {
+  background-color: rgba(239, 243, 244, 0.1);
+}
+
+.divisor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+}
+
+.divisor .line {
+  height: 1px;
+  background: #2f3336;
+  flex: 1;
+}
+
+.divisor span {
+  color: #fff;
+  font-size: 15px;
+  margin: 0 10px;
+  font-weight: 300;
+}
+
+/* Input style - 1 - floating label */
+
+label.floating {
+  position: relative;
+}
+label.floating input {
+  background: transparent;
+  /* border-style: none; */
+  border: 1px solid #333639;
+  border-radius: 4px;
+  height: 50px;
+  width: 100%;
+  padding: 20px 10px 5px 10px;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.2 s;
+}
+label.floating input::placeholder {
+  opacity: 0;
+}
+label.floating p {
+  color: #71767b;
+  position: absolute;
+  top: -15px;
+  left: 9px;
+  transform: translateY(30px);
+  font-size: 16px;
+  width: 95%;
+  transition-duration: 300ms;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+label.floating p spa n {
+  text-overflow: ellipsis;
+}
+
+label.floating:focus-within > p,
+input:not(:placeholder-shown) + p {
+  color: var(--color-primary);
+  transform: translateY(0px);
+  font-size: 12px;
+  top: 7px;
+}
+
+label.floating:not(:focus-within) > p {
+  color: #71767b;
+}
+
+input:focus,
+input:focus-within {
+  border: 1px solid var(--color-primary) !important;
 }

@@ -1,1 +1,40 @@
-<p>login works!</p>
+<div id="result" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <a class="btn-icon" (click)="closeLogin()">
+        <fa-icon [icon]="['fas', 'times']" style="color: #fff;" size="1x"></fa-icon>
+      </a>
+      <fa-icon [icon]="['fab', 'twitter']" style="color: #fff;" size="1x" class="center"></fa-icon>
+    </div>
+    <div class="modal-body">
+      <span class="title">Inicia sesión en Twitter</span>
+      <button class="btn btn-light" (click)="closeLogin()">
+        <fa-icon [icon]="['fab', 'google']" size="1x"></fa-icon>
+        Iniciar sesión con Google
+      </button>
+      <button class="btn btn-light">
+        <fa-icon [icon]="['fab', 'apple']" size="1x"></fa-icon>
+        Iniciar sesión con Apple
+      </button>
+      <div class="divisor">
+        <div class="line"></div>
+        <span>o</span>
+        <div class="line"></div>
+      </div>
+      <label for="name" class="floating">
+        <input type="text" id="name" placeholder="Name">
+        <p>
+          <span>Teléfono, correo electrónico o nombre de usuario</span>
+        </p>
+      </label>
+      <button class="btn btn-light">
+        Siguiente
+      </button>
+      <button class="btn btn-light-outline">
+        ¿Olvidaste tu contraseña?
+      </button>
+      <span class="link">¿No tienes cuenta una cuenta? <a>Registrate</a></span>
+    </div>
+    <span class="title-modal"></span>
+  </div>
+</div>

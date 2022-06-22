@@ -9,6 +9,7 @@ import { AuthModule } from './auth/auth.module';
 
 import { AppRoutingModule } from './app.routing';
 import { faApple, faGoogle, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ export class AppModule {
     library.addIcons(
       faTwitter,
       faGoogle,
-      faApple
+      faApple,
+      faTimes
     );
   }
 }

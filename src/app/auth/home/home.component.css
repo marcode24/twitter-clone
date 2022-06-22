@@ -78,25 +78,6 @@
   word-wrap: break-word;
 }
 
-section .divisor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 300px;
-}
-
-section .divisor .line {
-  height: 1px;
-  background: #2f3336;
-  flex: 1;
-}
-
-section .divisor span {
-  font-size: 15px;
-  margin: 0 10px;
-  font-weight: 300;
-}
-
 section p {
   font-size: 11px;
   max-width: 300px;
@@ -107,7 +88,7 @@ section p a {
   color: var(--color-primary);
 }
 
-section span {
+section > span {
   margin-top: 40px;
   font-size: 18px;
   font-weight: 700;
