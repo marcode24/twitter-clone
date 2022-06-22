@@ -2,14 +2,38 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faApple, faGoogle, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import {
+  faArrowUpFromBracket,
+  faBell,
+  faBookmark,
+  faCalendar,
+  faChartColumn,
+  faCommentAlt,
+  faEarth,
+  faEllipsis,
+  faEnvelope,
+  faFaceSmile,
+  faHashtag,
+  faHeart,
+  faHome,
+  faImage,
+  faList,
+  faLocationDot,
+  faRetweet,
+  faStar,
+  faTimes,
+  faUserAlt,
+  faVideo
+} from '@fortawesome/free-solid-svg-icons';
+
+import { FeaturesModule } from './features/features.module';
 
 import { AppComponent } from './app.component';
 
 import { AuthModule } from './auth/auth.module';
 
 import { AppRoutingModule } from './app.routing';
-import { faApple, faGoogle, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
   declarations: [
@@ -20,7 +44,8 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
     RouterModule,
     FontAwesomeModule,
     AppRoutingModule,
-    AuthModule
+    AuthModule,
+    FeaturesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -31,7 +56,27 @@ export class AppModule {
       faTwitter,
       faGoogle,
       faApple,
-      faTimes
+      faTimes,
+      faHome,
+      faHashtag,
+      faBell,
+      faEnvelope,
+      faBookmark,
+      faList,
+      faUserAlt,
+      faEllipsis,
+      faStar,
+      faEarth,
+      faImage,
+      faVideo,
+      faChartColumn,
+      faFaceSmile,
+      faCalendar,
+      faLocationDot,
+      faCommentAlt,
+      faRetweet,
+      faHeart,
+      faArrowUpFromBracket
     );
   }
 }

@@ -12,11 +12,6 @@ const routes: Routes = [
   },
   {
     path: 'auth',
-    redirectTo: '',
-    pathMatch: 'full'
-  },
-  {
-    path: 'auth',
     component: HomeComponent,
     children: [
       {
@@ -29,7 +24,6 @@ const routes: Routes = [
       },
     ],
   },
-  { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({

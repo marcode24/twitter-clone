@@ -10,13 +10,19 @@
 }
 
 html,
-input {
+input,
+textarea {
   font-family: "Roboto", sans-serif;
 }
 
 :root {
   --color-primary: #1d9bf0;
   --color-light: #ffffff;
+}
+
+body {
+  background: #000;
+  color: #fff;
 }
 
 .btn {

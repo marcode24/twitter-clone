@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* border: 1px solid #fff; */
+}
+
+.container .wrapper {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+}
+
+.container .wrapper .render {
+  flex-grow: 1;
+  border-left: 1px solid #2f3336;
+  border-right: 1px solid #2f3336;
+}
+
+.container .trends {
+  width: 350px;
+}
