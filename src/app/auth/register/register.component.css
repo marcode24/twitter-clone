@@ -1,0 +1,42 @@
+.modal-content .modal-header span.modal-title {
+  font-size: 20px;
+  flex-grow: 1;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  color: #e7e9ea;
+  margin-left: 1rem;
+}
+
+.modal-content form.modal-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.8rem 0;
+  width: 90%;
+  height: 100%;
+  min-width: 300px;
+  gap: 1rem;
+}
+
+.modal-content form > span {
+  color: #fff;
+  font-size: 15px;
+}
+
+.modal-content form > p {
+  color: #71767b;
+  font-size: 13px;
+}
+
+.modal-content form span.usage-option {
+  color: var(--color-primary);
+  align-self: flex-end;
+}
+
+.modal-content form .bottom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}

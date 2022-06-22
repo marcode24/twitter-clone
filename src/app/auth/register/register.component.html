@@ -1,1 +1,44 @@
-<p>register works!</p>
+<div class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <a class="btn-icon" routerLink="/">
+        <fa-icon [icon]="['fas', 'times']" style="color: #fff;" size="1x"></fa-icon>
+      </a>
+      <span class="modal-title">Paso 1 de 5</span>
+    </div>
+    <form class="modal-body">
+      <span class="title">Crea tu cuenta</span>
+      <label for="name" class="floating">
+        <input type="text" id="name" placeholder="name">
+        <p>
+          <span>Nombre</span>
+        </p>
+      </label>
+      <label for="phoneNumber" class="floating">
+        <input type="text" id="phoneNumber" placeholder="phoneNumber">
+        <p>
+          <span>Teléfono</span>
+        </p>
+      </label>
+      <span class="usage-option">Usar correo</span>
+      <span>Fecha de nacimiento</span>
+      <p>
+        Esta información no será pública.
+        Confirma tu propia edad, incluso si esta cuenta
+        es para una empresa, una mascota u otra cosa.
+      </p>
+      <label for="bornDate" class="floating">
+        <input type="date" id="bornDate" placeholder="born">
+        <p>
+          <span>Fecha de nacimiento</span>
+        </p>
+      </label>
+      <div class="bottom">
+        <button class="btn btn-light btn-lg">
+          Siguiente
+        </button>
+      </div>
+    </form>
+    <span class="title-modal"></span>
+  </div>
+</div>
