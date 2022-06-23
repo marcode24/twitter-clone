@@ -4,11 +4,19 @@ header {
   align-items: center;
   padding: 0 16px;
   height: 3.5rem;
+  position: fixed;
+  width: 573px;
+  backdrop-filter: blur(12px);
+  z-index: 100;
 }
 
 header span {
   font-size: 20px;
   font-weight: 700;
+}
+
+.main-content {
+  margin-top: 3.5rem;
 }
 
 section {
@@ -110,6 +118,10 @@ figure.box-image > img {
   gap: 4px;
 }
 
+.content .header span.name {
+  font-weight: 700;
+}
+
 .content .header span.username,
 .content .header span.time,
 .content .header span.dot,
@@ -134,7 +146,10 @@ figure.box-image > img {
 }
 
 .content .body {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1rem;
+  gap: 1rem;
 }
 
 .content .footer {
@@ -188,4 +203,85 @@ figure.box-image > img {
 .content .footer .statistics.danger:hover,
 .content .footer .statistics.danger:hover .icon {
   color: rgb(249, 24, 128);
+}
+
+.content .body .media {
+  min-width: 3.8rem;
+  width: auto;
+  height: auto;
+  border-radius: 1rem;
+  border: 2 px solid #2f3336;
+}
+
+.content .body .media img {
+  border-radius: 1rem;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.content .body .media.gif {
+  position: relative;
+}
+
+.content .body .media.gif span.tag {
+  padding: 0.4rem;
+  border-radius: 10px;
+  background: #2f3336;
+  position: absolute;
+  bottom: 0.8rem;
+  left: 0.8rem;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.content .body .media.images-4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3px;
+}
+
+.content .body .media.images-3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, auto);
+  gap: 3px;
+}
+
+.content .body .media.images-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3px;
+}
+
+.content .body .media.images-3 .image-1 {
+  grid-row: span 2;
+}
+
+.content .body .media.images-3 .image-1,
+.content .body .media.images-2 .image-1 {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.content .body .media.images-2 .image-2 {
+  border-radius: 0 1rem 1rem 0;
+}
+
+.content .body .media.images-4 .image-1 {
+  border-radius: 1rem 0 0 0;
+}
+
+.content .body .media.images-3 .image-2,
+.content .body .media.images-4 .image-2 {
+  border-radius: 0 1rem 0 0;
+}
+
+.content .body .media.images-4 .image-3 {
+  border-radius: 0 0 0 1rem;
+}
+
+.content .body .media.images-3 .image-3,
+.content .body .media.images-4 .image-4 {
+  border-radius: 0 0 1rem 0;
 }

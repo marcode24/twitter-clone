@@ -1,5 +1,4 @@
 .container {
-  display: flex;
   max-width: 1200px;
   margin: 0 auto;
   /* border: 1px solid #fff; */
@@ -12,6 +11,8 @@
 }
 
 .container .wrapper .render {
+  max-width: 575px;
+  margin-left: 275px;
   flex-grow: 1;
   border-left: 1px solid #2f3336;
   border-right: 1px solid #2f3336;
@@ -19,4 +20,17 @@
 
 .container .trends {
   width: 350px;
+}
+
+.item-a {
+  grid-area: header;
+}
+.item-b {
+  grid-area: main;
+}
+.item-c {
+  grid-area: sidebar;
+}
+.item-d {
+  grid-area: footer;
 }
