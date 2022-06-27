@@ -20,6 +20,7 @@ import {
   faImage,
   faList,
   faLocationDot,
+  faMagnifyingGlass,
   faRetweet,
   faStar,
   faTimes,
@@ -76,7 +77,8 @@ export class AppModule {
       faCommentAlt,
       faRetweet,
       faHeart,
-      faArrowUpFromBracket
+      faArrowUpFromBracket,
+      faMagnifyingGlass
     );
   }
 }

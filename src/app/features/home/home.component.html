@@ -1,422 +1,548 @@
-<header>
-  <span>Inicio</span>
-  <fa-icon [icon]="['fas', 'star']" size="1x"></fa-icon>
-</header>
+<div class="main-wrapper">
+  <div class="wrapper">
+    <header>
+      <span>Inicio</span>
+      <fa-icon [icon]="['fas', 'star']" size="1x"></fa-icon>
+    </header>
 
-<div class="main-content">
-  <section>
-    <figure class="box-image">
-      <img
-        src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-        alt="img-user">
-    </figure>
-    <div class="content">
-      <textarea (input)="auto_height(txtTwit)" #txtTwit rows="1" placeholder="¿Qué está pasando?"></textarea>
-      <div class="drop-container">
-        <a class="drop">
-          <fa-icon [icon]="['fas', 'earth']" size="1x"></fa-icon>
-          Cualquier persona puede responder
+    <div class="main-content">
+      <section>
+        <figure class="box-image">
+          <img
+            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt="img-user">
+        </figure>
+        <div class="content">
+          <textarea (input)="auto_height(txtTwit)" #txtTwit rows="1" placeholder="¿Qué está pasando?"></textarea>
+          <div class="drop-container">
+            <a class="drop">
+              <fa-icon [icon]="['fas', 'earth']" size="1x"></fa-icon>
+              Cualquier persona puede responder
+            </a>
+          </div>
+          <div class="divisor">
+            <div class="line"></div>
+          </div>
+          <div class="options">
+            <div class="icons">
+              <fa-icon [icon]="['fas', 'image']" size="1x"></fa-icon>
+              <fa-icon [icon]="['fas', 'video']" size="1x"></fa-icon>
+              <fa-icon [icon]="['fas', 'chart-column']" size="1x"></fa-icon>
+              <fa-icon [icon]="['fas', 'face-smile']" size="1x"></fa-icon>
+              <fa-icon [icon]="['fas', 'calendar']" size="1x"></fa-icon>
+              <fa-icon class="disabled" [icon]="['fas', 'location-dot']" size="1x"></fa-icon>
+            </div>
+            <button class="btn btn-primary">Twittear</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="publication">
+        <figure class="box-image">
+          <img
+            src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+            alt="img-user">
+        </figure>
+        <div class="content">
+          <div class="header">
+            <span class="name">otro nombre para ejemplo</span>
+            <span class="username">@otroUser223</span>
+            <span class="dot">·</span>
+            <span class="time">3h</span>
+            <div class="icon">
+              <fa-icon [icon]="['fas', 'ellipsis']"></fa-icon>
+            </div>
+          </div>
+          <div class="body">
+            <p class="text-content">
+              sentir #Orgullo siempre.
+            </p>
+            <div class="media images-3">
+              <img class="image-1"
+                src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                alt="yeah_gif">
+              <img class="image-2"
+                src="https://images.unsplash.com/photo-1517677129300-07b130802f46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="yeah_gif">
+              <img class="image-3"
+                src="https://images.unsplash.com/photo-1526306063970-d5498ad00f1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="yeah_gif">
+            </div>
+          </div>
+          <div class="footer">
+            <span class="statistics primary">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'comment-alt']"></fa-icon>
+              </div>5
+            </span>
+            <span class="statistics success">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'retweet']"></fa-icon>
+              </div>4
+            </span>
+            <span class="statistics danger">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'heart']"></fa-icon>
+              </div> 6
+            </span>
+            <span class="statistics primary">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'arrow-up-from-bracket']"></fa-icon>
+              </div>3
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="publication">
+        <figure class="box-image">
+          <img
+            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt="img-user">
+        </figure>
+        <div class="content">
+          <div class="header">
+            <span class="name">nombre de ejemplo</span>
+            <fa-icon [icon]="['fas', 'star']"></fa-icon>
+            <span class="username">@usernameEjemplo231</span>
+            <span class="dot">·</span>
+            <span class="time">2h</span>
+            <div class="icon">
+              <fa-icon [icon]="['fas', 'ellipsis']"></fa-icon>
+            </div>
+          </div>
+          <div class="body">
+            <p class="text-content">
+              Ser nosotros mismos es una de las cosas
+              más bonitas del amor, 💙 poder vivirlo sin
+              secretos y aceptarnos libremente. Sabemos
+              que hay historias que hacen sentir #Orgullo
+              y nos inspiran.
+            </p>
+          </div>
+          <div class="footer">
+            <span class="statistics primary">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'comment-alt']"></fa-icon>
+              </div>5
+            </span>
+            <span class="statistics success">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'retweet']"></fa-icon>
+              </div>4
+            </span>
+            <span class="statistics danger">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'heart']"></fa-icon>
+              </div> 6
+            </span>
+            <span class="statistics primary">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'arrow-up-from-bracket']"></fa-icon>
+              </div>3
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="publication">
+        <figure class="box-image">
+          <img
+            src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=761&q=80"
+            alt="img-user">
+        </figure>
+        <div class="content">
+          <div class="header">
+            <span class="name">otro nombre para ejemplo</span>
+            <span class="username">@otroUser223</span>
+            <span class="dot">·</span>
+            <span class="time">3h</span>
+            <div class="icon">
+              <fa-icon [icon]="['fas', 'ellipsis']"></fa-icon>
+            </div>
+          </div>
+          <div class="body">
+            <p class="text-content">
+              🎶Libreee soy, libreeeee soy🎶 @AliGuaGua
+              sin repetir y sin soplar, tres personajes
+              icónicos de películas LGBTQIA+ que te hacen
+              sentir #Orgullo siempre.
+            </p>
+            <div class="media gif">
+              <img class="image" src="assets/gifs/yeah.gif" alt="yeah_gif">
+              <span class="tag">GIF</span>
+            </div>
+          </div>
+          <div class="footer">
+            <span class="statistics primary">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'comment-alt']"></fa-icon>
+              </div>5
+            </span>
+            <span class="statistics success">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'retweet']"></fa-icon>
+              </div>4
+            </span>
+            <span class="statistics danger">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'heart']"></fa-icon>
+              </div> 6
+            </span>
+            <span class="statistics primary">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'arrow-up-from-bracket']"></fa-icon>
+              </div>3
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="publication">
+        <figure class="box-image">
+          <img
+            src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+            alt="img-user">
+        </figure>
+        <div class="content">
+          <div class="header">
+            <span class="name">otro nombre para ejemplo</span>
+            <span class="username">@otroUser223</span>
+            <span class="dot">·</span>
+            <span class="time">3h</span>
+            <div class="icon">
+              <fa-icon [icon]="['fas', 'ellipsis']"></fa-icon>
+            </div>
+          </div>
+          <div class="body">
+            <p class="text-content">
+              🎶Libreee soy, libreeeee soy🎶 @AliGuaGua
+              sin repetir y sin soplar, tres personajes
+              icónicos de películas LGBTQIA+ que te hacen
+              sentir #Orgullo siempre.
+            </p>
+            <div class="media images">
+              <img class="image"
+                src="https://images.unsplash.com/photo-1528679382855-71c1ab151b12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=802&q=80"
+                alt="yeah_gif">
+            </div>
+          </div>
+          <div class="footer">
+            <span class="statistics primary">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'comment-alt']"></fa-icon>
+              </div>5
+            </span>
+            <span class="statistics success">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'retweet']"></fa-icon>
+              </div>4
+            </span>
+            <span class="statistics danger">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'heart']"></fa-icon>
+              </div> 6
+            </span>
+            <span class="statistics primary">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'arrow-up-from-bracket']"></fa-icon>
+              </div>3
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="publication">
+        <figure class="box-image">
+          <img
+            src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+            alt="img-user">
+        </figure>
+        <div class="content">
+          <div class="header">
+            <span class="name">otro nombre para ejemplo</span>
+            <span class="username">@otroUser223</span>
+            <span class="dot">·</span>
+            <span class="time">3h</span>
+            <div class="icon">
+              <fa-icon [icon]="['fas', 'ellipsis']"></fa-icon>
+            </div>
+          </div>
+          <div class="body">
+            <p class="text-content">
+              🎶Libreee soy, libreeeee soy🎶 @AliGuaGua
+              sin repetir y sin soplar, tres personajes
+              icónicos de películas LGBTQIA+ que te hacen
+              sentir #Orgullo siempre.
+            </p>
+            <div class="media">
+              <img class="image"
+                src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                alt="yeah_gif">
+            </div>
+          </div>
+          <div class="footer">
+            <span class="statistics primary">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'comment-alt']"></fa-icon>
+              </div>5
+            </span>
+            <span class="statistics success">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'retweet']"></fa-icon>
+              </div>4
+            </span>
+            <span class="statistics danger">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'heart']"></fa-icon>
+              </div> 6
+            </span>
+            <span class="statistics primary">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'arrow-up-from-bracket']"></fa-icon>
+              </div>3
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="publication">
+        <figure class="box-image">
+          <img
+            src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+            alt="img-user">
+        </figure>
+        <div class="content">
+          <div class="header">
+            <span class="name">otro nombre para ejemplo</span>
+            <span class="username">@otroUser223</span>
+            <span class="dot">·</span>
+            <span class="time">3h</span>
+            <div class="icon">
+              <fa-icon [icon]="['fas', 'ellipsis']"></fa-icon>
+            </div>
+          </div>
+          <div class="body">
+            <p class="text-content">
+              sentir #Orgullo siempre.
+            </p>
+            <div class="media images-4">
+              <img class="image-1"
+                src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                alt="yeah_gif">
+              <img class="image-2"
+                src="https://images.unsplash.com/photo-1517677129300-07b130802f46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="yeah_gif">
+              <img class="image-3"
+                src="https://images.unsplash.com/photo-1526306063970-d5498ad00f1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="yeah_gif">
+              <img class="image-4"
+                src="https://images.unsplash.com/photo-1516898671633-efce17ccb6e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1196&q=80"
+                alt="yeah_gif">
+            </div>
+          </div>
+          <div class="footer">
+            <span class="statistics primary">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'comment-alt']"></fa-icon>
+              </div>5
+            </span>
+            <span class="statistics success">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'retweet']"></fa-icon>
+              </div>4
+            </span>
+            <span class="statistics danger">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'heart']"></fa-icon>
+              </div> 6
+            </span>
+            <span class="statistics primary">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'arrow-up-from-bracket']"></fa-icon>
+              </div>3
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="publication">
+        <figure class="box-image">
+          <img
+            src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+            alt="img-user">
+        </figure>
+        <div class="content">
+          <div class="header">
+            <span class="name">otro nombre para ejemplo</span>
+            <span class="username">@otroUser223</span>
+            <span class="dot">·</span>
+            <span class="time">3h</span>
+            <div class="icon">
+              <fa-icon [icon]="['fas', 'ellipsis']"></fa-icon>
+            </div>
+          </div>
+          <div class="body">
+            <p class="text-content">
+              sentir #Orgullo siempre.
+            </p>
+            <div class="media images-2">
+              <img class="image-1"
+                src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                alt="yeah_gif">
+              <img class="image-2"
+                src="https://images.unsplash.com/photo-1517677129300-07b130802f46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="yeah_gif">
+            </div>
+          </div>
+          <div class="footer">
+            <span class="statistics primary">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'comment-alt']"></fa-icon>
+              </div>5
+            </span>
+            <span class="statistics success">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'retweet']"></fa-icon>
+              </div>4
+            </span>
+            <span class="statistics danger">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'heart']"></fa-icon>
+              </div> 6
+            </span>
+            <span class="statistics primary">
+              <div class="icon">
+                <fa-icon [icon]="['fas', 'arrow-up-from-bracket']"></fa-icon>
+              </div>3
+            </span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="trends">
+    <div class="top">
+      <input type="text" class="icon" placeholder="Buscar en twiiter">
+      <fa-icon [icon]="['fas', 'magnifying-glass']" size="1x"></fa-icon>
+    </div>
+
+    <div class="trends-content">
+      <div class="card">
+        <div class="card-body">
+          <span class="card-title">Qué está pasando</span>
+          <div class="card-tweet">
+            <div class="tweet-body">
+              <span class="tweet-title">Noticias Mundial 22 de junio de 2022</span>
+              <p class="tweet-description">Las últimas noticias de ejemplo para ver si funciona</p>
+            </div>
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1586227740560-8cf2732c1531?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1261&q=80"
+                alt="new-image">
+            </figure>
+          </div>
+          <div class="card-tweet">
+            <div class="tweet-body">
+              <span class="tweet-title">Noticias Mundial 22 de junio de 2022</span>
+              <p class="tweet-description">Las últimas noticias de ejemplo</p>
+            </div>
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1623177579166-7029cf1d4d7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt="new-image">
+            </figure>
+          </div>
+          <div class="card-tweet">
+            <div class="tweet-body">
+              <span class="tweet-title">Noticias Mundial 22 de junio de 2022</span>
+              <p class="tweet-description">Las últimas noticias de ejemplo para ver si funciona</p>
+            </div>
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1623177579213-7efd042e73c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="new-image">
+            </figure>
+          </div>
+          <div class="card-tweet">
+            <div class="tweet-body">
+              <span class="tweet-title">Noticias Mundial 22 de junio de 2022</span>
+              <p class="tweet-description">Las últimas noticias de ejemplo para ver si funciona</p>
+            </div>
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1586227740560-8cf2732c1531?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1261&q=80"
+                alt="new-image">
+            </figure>
+          </div>
+          <div class="more">
+            <a class="more">Mostrar más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <span class="card-title">A quién seguir</span>
+          <div class="card-user">
+            <figure class="box-image">
+              <img
+                src="https://images.unsplash.com/photo-1644982647869-e1337f992828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+                alt="user-image">
+            </figure>
+            <div class="user-info">
+              <span class="name">user name</span>
+              <span class="username">@usern12ame</span>
+            </div>
+            <button class="btn btn-light">Seguir</button>
+          </div>
+          <div class="card-user">
+            <figure class="box-image">
+              <img
+                src="https://images.unsplash.com/photo-1540174401473-df5f1c06c716?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt="user-image">
+            </figure>
+            <div class="user-info">
+              <span class="name">user name
+                <fa-icon [icon]="['fas', 'star']"></fa-icon>
+              </span>
+              <span class="username">@usern12ame</span>
+            </div>
+            <button class="btn btn-light">Seguir</button>
+          </div>
+          <div class="card-user">
+            <figure class="box-image">
+              <img
+                src="https://images.unsplash.com/photo-1532074205216-d0e1f4b87368?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=741&q=80"
+                alt="user-image">
+            </figure>
+            <div class="user-info">
+              <span class="name">user name</span>
+              <span class="username">@usern12ame</span>
+            </div>
+            <button class="btn btn-light">Seguir</button>
+          </div>
+          <div class="more">
+            <a class="more">Mostrar más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="privacy">
+        <a>Condiciones de Servicio</a>
+        <a>Política de Privacidad</a>
+        <a>Política de Cookies</a>
+        <a>Accesibilidad</a>
+        <a>Información de anuncios</a>
+        <a class="more-options">
+          Más opciones
+          <fa-icon [icon]="['fas', 'ellipsis']"></fa-icon>
         </a>
-      </div>
-      <div class="divisor">
-        <div class="line"></div>
-      </div>
-      <div class="options">
-        <div class="icons">
-          <fa-icon [icon]="['fas', 'image']" size="1x"></fa-icon>
-          <fa-icon [icon]="['fas', 'video']" size="1x"></fa-icon>
-          <fa-icon [icon]="['fas', 'chart-column']" size="1x"></fa-icon>
-          <fa-icon [icon]="['fas', 'face-smile']" size="1x"></fa-icon>
-          <fa-icon [icon]="['fas', 'calendar']" size="1x"></fa-icon>
-          <fa-icon class="disabled" [icon]="['fas', 'location-dot']" size="1x"></fa-icon>
-        </div>
-        <button class="btn btn-primary">Twittear</button>
+        <span>&copy; 2022 Twitter, Inc.</span>
       </div>
     </div>
-  </section>
 
-  <section class="publication">
-    <figure class="box-image">
-      <img
-        src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-        alt="img-user">
-    </figure>
-    <div class="content">
-      <div class="header">
-        <span class="name">otro nombre para ejemplo</span>
-        <span class="username">@otroUser223</span>
-        <span class="dot">·</span>
-        <span class="time">3h</span>
-        <div class="icon">
-          <fa-icon [icon]="['fas', 'ellipsis']"></fa-icon>
-        </div>
-      </div>
-      <div class="body">
-        <p class="text-content">
-          sentir #Orgullo siempre.
-        </p>
-        <div class="media images-3">
-          <img class="image-1"
-            src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
-            alt="yeah_gif">
-          <img class="image-2"
-            src="https://images.unsplash.com/photo-1517677129300-07b130802f46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-            alt="yeah_gif">
-          <img class="image-3"
-            src="https://images.unsplash.com/photo-1526306063970-d5498ad00f1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-            alt="yeah_gif">
-        </div>
-      </div>
-      <div class="footer">
-        <span class="statistics primary">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'comment-alt']"></fa-icon>
-          </div>5
-        </span>
-        <span class="statistics success">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'retweet']"></fa-icon>
-          </div>4
-        </span>
-        <span class="statistics danger">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'heart']"></fa-icon>
-          </div> 6
-        </span>
-        <span class="statistics primary">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'arrow-up-from-bracket']"></fa-icon>
-          </div>3
-        </span>
-      </div>
-    </div>
-  </section>
+  </div>
 
-  <section class="publication">
-    <figure class="box-image">
-      <img
-        src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-        alt="img-user">
-    </figure>
-    <div class="content">
-      <div class="header">
-        <span class="name">nombre de ejemplo</span>
-        <fa-icon [icon]="['fas', 'star']"></fa-icon>
-        <span class="username">@usernameEjemplo231</span>
-        <span class="dot">·</span>
-        <span class="time">2h</span>
-        <div class="icon">
-          <fa-icon [icon]="['fas', 'ellipsis']"></fa-icon>
-        </div>
-      </div>
-      <div class="body">
-        <p class="text-content">
-          Ser nosotros mismos es una de las cosas
-          más bonitas del amor, 💙 poder vivirlo sin
-          secretos y aceptarnos libremente. Sabemos
-          que hay historias que hacen sentir #Orgullo
-          y nos inspiran.
-        </p>
-      </div>
-      <div class="footer">
-        <span class="statistics primary">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'comment-alt']"></fa-icon>
-          </div>5
-        </span>
-        <span class="statistics success">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'retweet']"></fa-icon>
-          </div>4
-        </span>
-        <span class="statistics danger">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'heart']"></fa-icon>
-          </div> 6
-        </span>
-        <span class="statistics primary">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'arrow-up-from-bracket']"></fa-icon>
-          </div>3
-        </span>
-      </div>
-    </div>
-  </section>
-
-  <section class="publication">
-    <figure class="box-image">
-      <img
-        src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=761&q=80"
-        alt="img-user">
-    </figure>
-    <div class="content">
-      <div class="header">
-        <span class="name">otro nombre para ejemplo</span>
-        <span class="username">@otroUser223</span>
-        <span class="dot">·</span>
-        <span class="time">3h</span>
-        <div class="icon">
-          <fa-icon [icon]="['fas', 'ellipsis']"></fa-icon>
-        </div>
-      </div>
-      <div class="body">
-        <p class="text-content">
-          🎶Libreee soy, libreeeee soy🎶 @AliGuaGua
-          sin repetir y sin soplar, tres personajes
-          icónicos de películas LGBTQIA+ que te hacen
-          sentir #Orgullo siempre.
-        </p>
-        <div class="media gif">
-          <img class="image" src="assets/gifs/yeah.gif" alt="yeah_gif">
-          <span class="tag">GIF</span>
-        </div>
-      </div>
-      <div class="footer">
-        <span class="statistics primary">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'comment-alt']"></fa-icon>
-          </div>5
-        </span>
-        <span class="statistics success">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'retweet']"></fa-icon>
-          </div>4
-        </span>
-        <span class="statistics danger">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'heart']"></fa-icon>
-          </div> 6
-        </span>
-        <span class="statistics primary">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'arrow-up-from-bracket']"></fa-icon>
-          </div>3
-        </span>
-      </div>
-    </div>
-  </section>
-
-  <section class="publication">
-    <figure class="box-image">
-      <img
-        src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-        alt="img-user">
-    </figure>
-    <div class="content">
-      <div class="header">
-        <span class="name">otro nombre para ejemplo</span>
-        <span class="username">@otroUser223</span>
-        <span class="dot">·</span>
-        <span class="time">3h</span>
-        <div class="icon">
-          <fa-icon [icon]="['fas', 'ellipsis']"></fa-icon>
-        </div>
-      </div>
-      <div class="body">
-        <p class="text-content">
-          🎶Libreee soy, libreeeee soy🎶 @AliGuaGua
-          sin repetir y sin soplar, tres personajes
-          icónicos de películas LGBTQIA+ que te hacen
-          sentir #Orgullo siempre.
-        </p>
-        <div class="media images">
-          <img class="image"
-            src="https://images.unsplash.com/photo-1528679382855-71c1ab151b12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=802&q=80"
-            alt="yeah_gif">
-        </div>
-      </div>
-      <div class="footer">
-        <span class="statistics primary">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'comment-alt']"></fa-icon>
-          </div>5
-        </span>
-        <span class="statistics success">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'retweet']"></fa-icon>
-          </div>4
-        </span>
-        <span class="statistics danger">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'heart']"></fa-icon>
-          </div> 6
-        </span>
-        <span class="statistics primary">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'arrow-up-from-bracket']"></fa-icon>
-          </div>3
-        </span>
-      </div>
-    </div>
-  </section>
-
-  <section class="publication">
-    <figure class="box-image">
-      <img
-        src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-        alt="img-user">
-    </figure>
-    <div class="content">
-      <div class="header">
-        <span class="name">otro nombre para ejemplo</span>
-        <span class="username">@otroUser223</span>
-        <span class="dot">·</span>
-        <span class="time">3h</span>
-        <div class="icon">
-          <fa-icon [icon]="['fas', 'ellipsis']"></fa-icon>
-        </div>
-      </div>
-      <div class="body">
-        <p class="text-content">
-          🎶Libreee soy, libreeeee soy🎶 @AliGuaGua
-          sin repetir y sin soplar, tres personajes
-          icónicos de películas LGBTQIA+ que te hacen
-          sentir #Orgullo siempre.
-        </p>
-        <div class="media">
-          <img class="image"
-            src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
-            alt="yeah_gif">
-        </div>
-      </div>
-      <div class="footer">
-        <span class="statistics primary">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'comment-alt']"></fa-icon>
-          </div>5
-        </span>
-        <span class="statistics success">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'retweet']"></fa-icon>
-          </div>4
-        </span>
-        <span class="statistics danger">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'heart']"></fa-icon>
-          </div> 6
-        </span>
-        <span class="statistics primary">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'arrow-up-from-bracket']"></fa-icon>
-          </div>3
-        </span>
-      </div>
-    </div>
-  </section>
-
-  <section class="publication">
-    <figure class="box-image">
-      <img
-        src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-        alt="img-user">
-    </figure>
-    <div class="content">
-      <div class="header">
-        <span class="name">otro nombre para ejemplo</span>
-        <span class="username">@otroUser223</span>
-        <span class="dot">·</span>
-        <span class="time">3h</span>
-        <div class="icon">
-          <fa-icon [icon]="['fas', 'ellipsis']"></fa-icon>
-        </div>
-      </div>
-      <div class="body">
-        <p class="text-content">
-          sentir #Orgullo siempre.
-        </p>
-        <div class="media images-4">
-          <img class="image-1"
-            src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
-            alt="yeah_gif">
-          <img class="image-2"
-            src="https://images.unsplash.com/photo-1517677129300-07b130802f46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-            alt="yeah_gif">
-          <img class="image-3"
-            src="https://images.unsplash.com/photo-1526306063970-d5498ad00f1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-            alt="yeah_gif">
-          <img class="image-4"
-            src="https://images.unsplash.com/photo-1516898671633-efce17ccb6e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1196&q=80"
-            alt="yeah_gif">
-        </div>
-      </div>
-      <div class="footer">
-        <span class="statistics primary">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'comment-alt']"></fa-icon>
-          </div>5
-        </span>
-        <span class="statistics success">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'retweet']"></fa-icon>
-          </div>4
-        </span>
-        <span class="statistics danger">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'heart']"></fa-icon>
-          </div> 6
-        </span>
-        <span class="statistics primary">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'arrow-up-from-bracket']"></fa-icon>
-          </div>3
-        </span>
-      </div>
-    </div>
-  </section>
-
-
-
-  <section class="publication">
-    <figure class="box-image">
-      <img
-        src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-        alt="img-user">
-    </figure>
-    <div class="content">
-      <div class="header">
-        <span class="name">otro nombre para ejemplo</span>
-        <span class="username">@otroUser223</span>
-        <span class="dot">·</span>
-        <span class="time">3h</span>
-        <div class="icon">
-          <fa-icon [icon]="['fas', 'ellipsis']"></fa-icon>
-        </div>
-      </div>
-      <div class="body">
-        <p class="text-content">
-          sentir #Orgullo siempre.
-        </p>
-        <div class="media images-2">
-          <img class="image-1"
-            src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
-            alt="yeah_gif">
-          <img class="image-2"
-            src="https://images.unsplash.com/photo-1517677129300-07b130802f46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-            alt="yeah_gif">
-        </div>
-      </div>
-      <div class="footer">
-        <span class="statistics primary">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'comment-alt']"></fa-icon>
-          </div>5
-        </span>
-        <span class="statistics success">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'retweet']"></fa-icon>
-          </div>4
-        </span>
-        <span class="statistics danger">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'heart']"></fa-icon>
-          </div> 6
-        </span>
-        <span class="statistics primary">
-          <div class="icon">
-            <fa-icon [icon]="['fas', 'arrow-up-from-bracket']"></fa-icon>
-          </div>3
-        </span>
-      </div>
-    </div>
-  </section>
 </div>
