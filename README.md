@@ -36,3 +36,7 @@ Shut it down manually with `Ctrl+C`
 | Production | [https://twitter-clone-challenge.netlify.app/](https://twitter-clone-challenge.netlify.app/) |
 
 ## Previews
+
+![login](https://github.com/marcode24/twitter-clone/blob/main/src/assets/images/home1.png)
+
+![home](https://github.com/marcode24/twitter-clone/blob/main/src/assets/images/home2.png)
