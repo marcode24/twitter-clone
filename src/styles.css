@@ -144,6 +144,13 @@ label.floating p {
   overflow: hidden;
 }
 
+span.hash,
+span.at,
+a.link {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
 label.floating p spa n {
   text-overflow: ellipsis;
 }
@@ -209,7 +216,7 @@ input.icon:focus ~ fa-icon {
   transition: 1s;
   display: flex;
   justify-content: center;
-  align-items: cen ter;
+  align-items: center;
 }
 
 .modal-content {

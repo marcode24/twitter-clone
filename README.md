@@ -34,3 +34,5 @@ Shut it down manually with `Ctrl+C`
 | ---------- | -------------------------------------------------------------------------------------------- | ---- |
 | Localhost  | [localhost](http://localhost:4200)                                                           | 4200 |
 | Production | [https://twitter-clone-challenge.netlify.app/](https://twitter-clone-challenge.netlify.app/) |
+
+## Previews
