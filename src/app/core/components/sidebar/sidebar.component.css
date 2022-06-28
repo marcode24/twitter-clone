@@ -38,23 +38,11 @@
   width: 100%;
 }
 
-.wrapper ul.navigation li {
+.wrapper ul.navigation li.item {
   cursor: pointer;
   position: relative;
   list-style: none;
   width: 100%;
-}
-
-.wrapper ul.navigation li:hover a.menu,
-.profile-wrapper a:hover {
-  background: rgb(231, 233, 234, 0.1);
-}
-
-.wrapper ul.navigation li fa-icon {
-  font-size: 24px;
-}
-
-.wrapper ul.navigation li a.menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,6 +55,19 @@
   transition: 0.3s;
   border-radius: 30px;
   width: fit-content;
+}
+
+.wrapper ul.navigation li.item:hover,
+.profile-wrapper a:hover {
+  background: rgb(231, 233, 234, 0.1);
+}
+
+.wrapper ul.navigation li.item fa-icon {
+  font-size: 24px;
+}
+
+.wrapper ul.navigation li.item a {
+  opacity: 1;
 }
 
 .profile-wrapper {
@@ -120,4 +121,10 @@ figure.box-image > img {
 .profile-wrapper a fa-icon {
   flex-grow: 1;
   text-align: end;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 80px;
+  }
 }

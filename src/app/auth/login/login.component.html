@@ -8,11 +8,11 @@
     </div>
     <div class="modal-body">
       <span class="title">Inicia sesión en Twitter</span>
-      <button class="btn btn-light" (click)="closeLogin()">
+      <button routerLink="/home" class="btn btn-light" (click)="closeLogin()">
         <fa-icon [icon]="['fab', 'google']" size="1x"></fa-icon>
         Iniciar sesión con Google
       </button>
-      <button class="btn btn-light">
+      <button routerLink="/home" class="btn btn-light">
         <fa-icon [icon]="['fab', 'apple']" size="1x"></fa-icon>
         Iniciar sesión con Apple
       </button>
