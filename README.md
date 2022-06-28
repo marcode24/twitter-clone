@@ -37,6 +37,7 @@ Shut it down manually with `Ctrl+C`
 
 ## Previews
 
-![login](https://github.com/marcode24/twitter-clone/blob/main/src/assets/images/home1.png)
-
-![home](https://github.com/marcode24/twitter-clone/blob/main/src/assets/images/home2.png)
+![home1](https://github.com/marcode24/twitter-clone/blob/main/src/assets/images/home1.png)
+![login](https://github.com/marcode24/twitter-clone/blob/main/src/assets/images/login.png)
+![register](https://github.com/marcode24/twitter-clone/blob/main/src/assets/images/register.png)
+![home2](https://github.com/marcode24/twitter-clone/blob/main/src/assets/images/home2.png)
